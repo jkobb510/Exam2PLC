@@ -1,0 +1,23 @@
+#static
+$x=3;
+sub subroutine1{
+    return $x;
+}
+sub subroutine2 {
+    my $x=5;
+    return subroutine1();
+}
+
+#dynamic
+$y=7;
+sub subroutine3 {
+    return $y;
+}
+sub subroutine4 {
+    local $y=8;
+    return subroutine3();
+}
+print "static scope: ", subroutine2(),"\n";
+print "dynamic scope: ", subroutine4(), "\n";
+
+
