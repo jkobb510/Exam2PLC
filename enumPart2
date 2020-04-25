@@ -1,0 +1,13 @@
+//with integer variables
+#include <iostream>
+using namespace std;
+int main () {
+int person [] = {0,1,2,3,4};
+int majors [] = {1,2,3,4};
+int p = person[1];
+int choice = majors [0];
+if (p==1 && choice==1){
+cout<<"Mike has chosen to major in Computer Science"<<endl;
+}
+return 0;
+}
