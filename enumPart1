@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+enum majors {
+	CS=1,
+	Law=2,
+	Biology=3,
+	Chemistry=4} choice;
+
+enum person {John, Mike, Kristie, Morgan, Josh};
+int main () {
+	choice=CS;
+	person p = Mike;
+	if (choice==CS && p==Mike){
+	cout<< "Mike has chosen to major in Computer Science"<<endl;
+}
+return 0;
+}
+	
